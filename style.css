@@ -5,9 +5,13 @@ body {
   margin: 2rem auto;
   padding: 1rem;
   line-height: 1.6;
-  background-color: #f9f9f9;
   color: #333;
+
+  /* Subtle gradient background */
+  background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+  min-height: 100vh;
 }
+
 
 h1, h2 {
   color: #0a558c;
