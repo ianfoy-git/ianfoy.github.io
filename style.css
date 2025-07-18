@@ -40,10 +40,12 @@ iframe {
 /* Navigation bar */
 .navbar {
   background-color: #0a558c;
-  overflow: hidden;
+  overflow: visible;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar ul {
@@ -51,6 +53,7 @@ iframe {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 1rem;
 }
 
 .navbar li {
@@ -66,18 +69,20 @@ iframe {
 
 .navbar a:hover {
   background-color: #08467b;
+  border-radius: 4px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  min-width: 180px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-  z-index: 1;
   top: 100%;
   left: 0;
+  background-color: white;
   border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -85,6 +90,7 @@ iframe {
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: block;
+  white-space: nowrap;
 }
 
 .dropdown-content a:hover {
